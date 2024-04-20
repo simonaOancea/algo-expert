@@ -1,0 +1,15 @@
+.idea/
+*.iml
+*.class
+target/
+build/
+*.log
+*.jar
+*.war
+*.ear
+*.ser
+*.swp
+*.bak
+*.off
+*.old
+*.tmp
