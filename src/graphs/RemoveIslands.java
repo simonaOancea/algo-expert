@@ -64,7 +64,7 @@ public class RemoveIslands {
         Stack<int[]> stack = new Stack<>();
         stack.push(new int[] {startRow, startCol});
 
-        while (stack.size() > 0) {
+        while (!stack.isEmpty()) {
             int[] currentPosition = stack.pop();
             int currentRow = currentPosition[0];
             int currentCol = currentPosition[1];
