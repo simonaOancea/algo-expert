@@ -10,6 +10,6 @@ public class ValidPalindromeStreams {
 				.mapToObj(c -> Character.toLowerCase((char) c))
 				.forEach(builder::append);
 
-		return builder.toString().equals(builder.reverse().toString());
+		return builder.toString().contentEquals(builder.reverse());
 	}
 }

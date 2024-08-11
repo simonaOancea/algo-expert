@@ -26,7 +26,7 @@ public class Streams {
         List<String> duplicates = elementCounts.entrySet().stream()
                 .filter(entry -> entry.getValue() > 1)
                 .map(Map.Entry::getKey)
-                .collect(Collectors.toList());
+                .toList();
 
         // Print the elements that appear more than once
         System.out.println("Elements that appear more than once: " + duplicates);

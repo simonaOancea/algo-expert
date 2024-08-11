@@ -25,7 +25,7 @@ public class BalancedBracketsFirstSolution {
             if (openingBrackets.indexOf(letter) != - 1) {
                 stack.add(letter);
             } else if (closingBrackets.indexOf(letter) != -1) {
-                if (stack.size() == 0) {
+                if (stack.isEmpty()) {
                     return false;
                 }
                 if (stack.get(stack.size() - 1) == matchingBrackets.get(letter)) {
